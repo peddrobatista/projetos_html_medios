@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.div1
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: stretch;
+    text-align: center;
+}
+.element1, .element2
+{
+    width: 50vw;
+    margin: auto;
+}
+.element1 #demo 
+{
+    font-size: 24px;
+}
+.element2 #lblMensagem
+{
+    border: none;
+    background: none;
+}
+@media (max-width: 550px) 
+{
+    .element1, .element2 
+    {
+        width: 100vw;
+        margin: 0;
+    }
+}
+.div1 > div 
+{
+    background: #ecf0f1;
+    padding: 1em;
+}
+.div1 > div:hover
+{
+    border: 1px solid #f1c40f;
+}

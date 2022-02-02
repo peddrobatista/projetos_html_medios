@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
     <title>Imprimindo Texto</title>
+    <link rel="stylesheet" href="imprimir.css">
 </head>
 <body>
-    <form action="">
-        <input type="text" id="name" name="name">
-        <input type="submit" value="Enviar">
-    </form>
+<div class="div1">
+    <div class="element1"> 
+        <p id="demo">Aqui vai aparecer a mensagem</p><br><br>
+        <button id="btnClick1" onclick="myFunction()">Clique em mim</button>
+    </div>
+    <div class="element2">
+        <input type="text" id="lblMensagem" placeholder="Digite a mensagem aqui"><br><br>
+        <button id="btnClick2" onclick="myFunction2()">Clique Aqui</button>
+    </div>
+</div>
     <script>
-          var input = document.querySelector("#name");
-          var texto = input.value;
-          console.log(texto);
-    </script>
+        function myFunction() {
+        // Vai pegar o elemento pelo seu id e colocar outro valor nele através do innerHTML 
+          document.getElementById("demo").innerHTML = "Olá Mundo!!";
+        }
+        function myFunction2() {
+            var lblMensagem = document.getElementById("lblMensagem").value;
+            document.getElementById("demo").innerHTML = lblMensagem;
+        }
+    </script>  
+        
+         
+    
 </body>
-</html>
+</html> 
